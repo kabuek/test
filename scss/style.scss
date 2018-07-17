@@ -1,0 +1,279 @@
+@import "fonts";
+@import "settings";
+@import "slick";
+
+header {
+	width: 100%;
+	background: url('../img/top-bg.png') top center no-repeat;
+	background-size: cover;
+
+	.header__top {
+		padding-top: 170px;
+		padding-bottom: 170px;
+
+		h1 {
+			padding-bottom: 20px;
+			font-size: 60px;
+			font-weight: 400;
+			line-height: 67px;
+			text-transform: uppercase;
+			letter-spacing: 4.5px;
+		}
+
+		p {
+			width: 40%;
+			padding-bottom: 45px;
+		}
+	}
+
+	nav {
+		width: 100%;
+		background-color: rgba(37,37,37,0.7);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		ul {
+			width: 30%;
+			display: flex;
+			justify-content: space-between;
+
+			.nav__link {
+				padding: 20px 0;
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.header__bottom {
+		width: 100%;
+		background-color: $bg-color;
+		padding-top: 75px;
+		padding-bottom: 50px;
+		display: flex;
+		justify-content: space-around;
+
+		.header__bottom__block {
+			width: 45%;
+		}
+
+		.header__bottom__block:first-child {
+			text-align: right;
+
+			h2 {
+				font-size: 30px;
+				font-weight: 700;
+				line-height: 56px;
+				text-transform: uppercase;
+				letter-spacing: 2.25px;
+			}
+
+			.line {
+				display: inline-block;
+				width: 20%;
+				height: 2px;
+				background-color: $green;
+			}
+		}
+
+		.header__bottom__block:nth-child(2) {
+			font-size: 14px;
+
+			p{padding-bottom: 40px;}
+		}
+	}
+}
+
+#content {
+	width: 100%;
+
+	.content__top, .content__center, .content__bottom {
+		h2 {
+			padding-bottom: 20px;
+			font-size: 52px;
+			font-weight: 400;
+			line-height: 67px;
+			text-transform: uppercase;
+			letter-spacing: 4.5px;
+		}
+
+		p {
+			width: 40%;
+			padding-bottom: 45px;
+		}
+	}
+
+	.content__top {
+		background: url('../img/content-bg1.png') top center no-repeat;
+	}
+
+	.content__center {
+		background: url('../img/content-bg2.png') top center no-repeat;
+	}
+
+	.content__top, .content__center {
+		padding-top: 120px;
+		padding-bottom: 120px;
+		background-size: cover;
+	}
+
+	.content__bottom {
+		padding: 70px 0;
+		background-color: $bg-color;
+		text-align: center;
+
+		h2 {
+			padding-bottom: 40px;
+			font-size: 48px;
+		}
+
+		p {
+			width: 80%;
+			margin: 0 auto;
+			padding-bottom: 0;
+			font-size: 18px;
+		}
+
+		.green {color: $green;}
+	}
+}
+
+#slider {
+	padding: 100px 0;
+
+	.slide {
+
+		margin: 30px 40px;
+		position: relative;
+		border-radius: 10px;
+		box-shadow: 0 7px 52px 5px rgba(0, 0, 0, 0.2);
+
+		p {
+			padding: 25px;
+			color: #000;
+			font-size: 15px;
+			font-style: italic;
+			line-height: 28px;
+			overflow: hidden;
+			text-overflow: clip;
+		}
+
+		span {
+			padding: 25px;
+			display: block;
+			background-color: $green;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 30px;
+			text-transform: uppercase;
+			border-radius: 0 0 10px 10px;
+		}
+
+		.quote {
+			position: absolute;
+			right: 10%;
+			bottom: 10%;
+			background-color: $white;
+			padding: 20px;
+			border-radius: 50%;
+			font-size: 27px;
+			color: $green;
+		}
+	}
+}
+
+footer {
+	width: 100%;
+
+	.footer__top {
+		padding-top: 65px;
+		padding-bottom: 38px;
+		background: url('../img/bg-footer.png') top center no-repeat;
+		background-size: cover;
+		
+		h2 {
+			padding-bottom: 20px;
+			font-size: 72px;
+			font-weight: 400;
+			line-height: 67px;
+			text-transform: uppercase;
+			letter-spacing: 4.5px;
+		}
+
+		p {
+			width: 40%;
+			padding-bottom: 45px;
+		}
+	}
+
+	.footer__bottom {
+		display: flex;
+		justify-content: space-between;
+
+		.footer__bottom__block {
+			padding: 40px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: calc(100%/3);
+			background-color: #363636;
+			box-sizing: border-box;
+
+			h4 {
+				padding-bottom: 20px;
+				font-size: 26px;
+				font-weight: 700;
+				line-height: 45px;
+				text-transform: uppercase;
+			}
+
+			span {padding-bottom: 20px;}
+		}
+
+		.footer__bottom__block:first-child {
+			background-color: $bg-color;
+
+			div {
+				width: 100%;
+				margin: auto;
+			}
+
+			h2 {
+				padding-bottom: 30px;
+				font-size: 26px;
+				font-weight: 400;
+				line-height: 50px;
+				text-transform: uppercase;
+			}
+
+			.line {
+				display: inline-block;
+				width: 35%;
+				height: 2px;
+				background-color: $green;
+				padding-bottom: 0;
+			}
+		}
+
+		.footer__bottom__block:nth-child(3) {
+			div {
+				padding: 40px 0 0 0;
+				width: 70%;
+				display: flex;
+				flex-direction: row;
+
+				a {padding-right: 10px;}
+			}
+
+			span {
+				line-height: 24px;
+
+				.fa-facebook-square {
+					padding-right: 10px;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}
