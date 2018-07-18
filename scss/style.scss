@@ -3,11 +3,13 @@
 @import "slick";
 
 header {
+	position: relative;
 	width: 100%;
 	background: url('../img/top-bg.jpg') center center no-repeat fixed;
   	background-size: cover;
 
 	.header__top {
+		position: relative;
 		padding-top: 170px;
 		padding-bottom: 170px;
 
@@ -27,6 +29,7 @@ header {
 	}
 
 	nav {
+		position: relative;
 		width: 100%;
 		background-color: rgba(37,37,37,0.7);
 		display: flex;
@@ -47,6 +50,7 @@ header {
 	}
 
 	.header__bottom {
+		position: relative;
 		width: 100%;
 		background-color: $bg-color;
 		padding-top: 75px;
@@ -86,9 +90,12 @@ header {
 }
 
 #content {
+	position: relative;
 	width: 100%;
 
 	.content__top, .content__center, .content__bottom {
+		position: relative;
+
 		h2 {
 			padding-bottom: 20px;
 			font-size: 52px;
