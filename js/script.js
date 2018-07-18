@@ -3,3 +3,8 @@ $(".nav__link").on("click", function (e) {
 	$(".nav__link").removeClass("active");
 	$(this).addClass("active");
 })
+
+$(window).scroll(function(){
+    var scrolled = $(window).scrollTop();
+    $('.bg').css('top', -(scrolled * 0.5) + 'px');
+});

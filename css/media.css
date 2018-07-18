@@ -32,7 +32,12 @@
 
 	#slider .slide span {padding: 15px 25px;}
 
-	#slider .slide .quote {right: 7%; bottom: 7%;}
+	#slider .slide .quote {
+		right: 7%;
+		bottom: 7%;
+		padding: 15px;
+		font-size: 22px;
+	}
 
 	footer .footer__bottom .footer__bottom__block:first-child h2,
 	footer .footer__bottom .footer__bottom__block h4 {
@@ -77,8 +82,6 @@
 	#slider .slide .quote {
 		right: 5%;
 		bottom: 10%;
-		padding: 15px;
-		font-size: 22px;
 	}
 
 	footer .footer__top h2 {
