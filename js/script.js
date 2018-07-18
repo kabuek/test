@@ -6,5 +6,5 @@ $(".nav__link").on("click", function (e) {
 
 $(window).scroll(function(){
     var scrolled = $(window).scrollTop();
-    $('.bg').css('top', +(scrolled * 0.2) + 'px');
+    $('.bg').css('top', -(scrolled * 0.2) + 'px');
 });
