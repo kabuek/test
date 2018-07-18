@@ -57,6 +57,24 @@
 	}
 }
 
+@media only screen and (max-width : 900px) {
+	footer .footer__bottom .footer__bottom__block {
+		width: 50%;
+	}
+
+	footer .footer__bottom .footer__bottom__block:first-child {
+		width: 100%;
+	}
+
+	footer .footer__bottom {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+}
+
 @media only screen and (max-width : 768px) {
 	.left {
 		padding-left: 50px;
@@ -92,27 +110,29 @@
 		width: 55%;
 	}
 
-	footer .footer__bottom {
-		-webkit-flex-wrap: wrap;
-		-moz-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		-o-flex-wrap: wrap;
-		flex-wrap: wrap;
-	}
-
-	footer .footer__bottom .footer__bottom__block {
-		width: 50%;
-	}
-
-	footer .footer__bottom .footer__bottom__block:first-child {
-		width: 100%;
-	}
-
 	footer .footer__bottom .footer__bottom__block:first-child h2,
 	footer .footer__bottom .footer__bottom__block h4 {
 		font-size: 26px;
 	}
+	
+	.green_button {
+		padding: 3px 30px;
+		font-size: 12px;
+	}
 }
+
+@media only screen and (max-width : 710px) {
+	header nav ul {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width : 610px){
+	footer .footer__bottom .footer__bottom__block {
+		width: 100%;
+	}
+}
+
 @media only screen and (max-width : 425px) {
 	header .header__top {
 		padding-top: 60px;
@@ -139,11 +159,6 @@
 		width: 100%;
 		padding: 10px;
 		text-align: center;
-	}
-
-	.green_button {
-		padding: 3px 30px;
-		font-size: 12px;
 	}
 
 	#content .content__top, 

@@ -29,6 +29,7 @@ header {
 	}
 
 	nav {
+		z-index: 10;
 		position: relative;
 		width: 100%;
 		background-color: rgba(37,37,37,0.7);
@@ -38,6 +39,10 @@ header {
 
 		ul {
 			width: 30%;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
 			display: flex;
 			justify-content: space-between;
 
@@ -50,6 +55,7 @@ header {
 	}
 
 	.header__bottom {
+		z-index: 10;
 		position: relative;
 		width: 100%;
 		background-color: $bg-color;
@@ -112,6 +118,7 @@ header {
 	}
 
 	.content__top {
+		z-index: 5;
 		background: url('../img/content-bg1.jpg') center center no-repeat fixed;
 	}
 
@@ -147,10 +154,10 @@ header {
 }
 
 #slider {
+	z-index: 10;
 	padding: 100px 0;
 
 	.slide {
-
 		margin: 30px 40px;
 		position: relative;
 		border-radius: 10px;
@@ -191,9 +198,11 @@ header {
 }
 
 footer {
+	position: relative;
 	width: 100%;
 
 	.footer__top {
+		position: relative;
 		padding-top: 65px;
 		padding-bottom: 38px;
 		background: url('../img/bg-footer.jpg') center center no-repeat fixed;
@@ -215,11 +224,19 @@ footer {
 	}
 
 	.footer__bottom {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
 		display: flex;
 		justify-content: space-between;
 
 		.footer__bottom__block {
 			padding: 40px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
@@ -267,6 +284,10 @@ footer {
 			div {
 				padding: 40px 0 0 0;
 				width: 70%;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
 				display: flex;
 				flex-direction: row;
 

@@ -4,7 +4,8 @@ $(".nav__link").on("click", function (e) {
 	$(this).addClass("active");
 })
 
-$(window).scroll(function(){
+$(window).on("scroll", function(){
     var scrolled = $(window).scrollTop();
-    $('.bg').css('top', -(scrolled * 0.2) + 'px');
+    if ($('header').scrollTop() >= 10) {
+    $('.bg').css('top', +(scrolled * 0.1) + 'px'); }
 });

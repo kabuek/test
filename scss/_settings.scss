@@ -22,6 +22,10 @@ a {
 }
 
 .left {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -30,6 +34,10 @@ a {
 }
 
 .right {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
